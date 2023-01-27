@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/testjob/static/css/main.526975ff.css",
-    "main.js": "/testjob/static/js/main.81fe6b83.js",
+    "main.js": "/testjob/static/js/main.00fcaa5b.js",
     "static/js/787.0c3f432a.chunk.js": "/testjob/static/js/787.0c3f432a.chunk.js",
     "static/media/logoBottom.svg": "/testjob/static/media/logoBottom.63a785122e6cba4ed3b1570dfaa90061.svg",
     "static/media/logoTop.svg": "/testjob/static/media/logoTop.3ead3b0afaef9283d68d207996485c55.svg",
@@ -18,11 +18,11 @@
     "static/media/ArrowLeft.svg": "/testjob/static/media/ArrowLeft.6683b0d27d301143a2d843682dfd83c3.svg",
     "static/media/ArrowRight.svg": "/testjob/static/media/ArrowRight.607ee3ce819fc4365d380b8ff0251f7a.svg",
     "main.526975ff.css.map": "/testjob/static/css/main.526975ff.css.map",
-    "main.81fe6b83.js.map": "/testjob/static/js/main.81fe6b83.js.map",
+    "main.00fcaa5b.js.map": "/testjob/static/js/main.00fcaa5b.js.map",
     "787.0c3f432a.chunk.js.map": "/testjob/static/js/787.0c3f432a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.526975ff.css",
-    "static/js/main.81fe6b83.js"
+    "static/js/main.00fcaa5b.js"
   ]
 }
