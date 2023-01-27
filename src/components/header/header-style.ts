@@ -20,7 +20,7 @@ export const HeaderWrapper = styled.div`
   
   
 `
-export const HeaderStyle = styled.div`
+export const HeaderStyle = styled.header`
   padding: 32px 0;
   min-height: 58px;
   margin-bottom: 50px;

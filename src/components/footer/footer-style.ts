@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 
-export const FooterWrap = styled.section`
+export const FooterWrap = styled.footer`
   background-color: #3D5F47;
+  overflow-x: hidden ;
   
 `
 export const FooterTop = styled.div`

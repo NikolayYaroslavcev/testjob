@@ -4,7 +4,6 @@ export const AboutCompanyWrap = styled.section``
 export const AboutCompanyTitle = styled.div`
   color: #000000;
   padding-top: 49px;
-  padding-top: 49px;
   @media (max-width: 425.98px) {
     padding-top: 10px;
   }

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const SliderWrap = styled.div`
   margin-bottom: 90px;
   background: #E9FCE5;
-  overflow-x:hidden;
   @media (max-width: 1024.98px) {
     margin-bottom: 30px;
   }
