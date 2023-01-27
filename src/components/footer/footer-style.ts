@@ -10,7 +10,7 @@ export const FooterTop = styled.div`
   column-gap: 20px;
   justify-content: space-between;
   @media (max-width: 425.98px) {
- flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: center;
   }
 
@@ -86,6 +86,7 @@ export const FooterBottom = styled.div`
     }
     @media (max-width: 425.98px) {
       row-gap: 10px;
+      font-size: 14px;
     }
     @media (max-width: 320.98px) {
       display: flex;

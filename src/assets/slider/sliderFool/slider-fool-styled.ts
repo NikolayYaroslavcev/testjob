@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const SliderWrap = styled.div`
   margin-bottom: 90px;
   background: #E9FCE5;
+  overflow-x:hidden;
   @media (max-width: 1024.98px) {
     margin-bottom: 30px;
   }
@@ -35,12 +36,16 @@ export const SliderTextWrap = styled.div`
   font-weight: 600;
   color: #000000;
   text-align: center;
+  transition: all 0.3s;
 
   p {
     font-size: 20px;
     line-height: 25px;
     margin-bottom: 33px;
     text-align: start;
+    @media (max-width: 425.98px) {
+      font-size: 14px;
+    }
   }
 
   span {

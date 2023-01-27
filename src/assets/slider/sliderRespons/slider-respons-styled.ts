@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const SliderResponsWrapper = styled.div`
-
   background: #E9FCE5;
   h2 {
     font-weight: 600;
