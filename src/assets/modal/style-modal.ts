@@ -15,7 +15,13 @@ export const ModalWrap = styled.div`
   background-color: rgba(0, 0, 0, 0.6);
   transition: all 0.3s;
   padding: 30px;
+  @media (max-width: 320.98px) {
+    left: -4px;
+  }
   //scale: 0;
+  
+  
+  
 `
 export const PopupWrap = styled.div`
   display: flex;
@@ -26,6 +32,10 @@ export const PopupWrap = styled.div`
   padding: 20px;
   max-width: 450px;
   transition: all 0.3s;
+  @media (max-width: 320.98px) {
+    padding: 3px;
+    row-gap: 10px;
+  }
 `
 export const DialogButton = styled.button`
   background: #67b07b;
@@ -44,12 +54,21 @@ export const DialogButton = styled.button`
   :hover {
     background: #3D5F47;
   }
+  @media (max-width: 320.98px) {
+    margin-bottom: 10px;
+
+  }
 
 
 `
 export const ButtonClose = styled.span`
   align-self: end;
   cursor: pointer;
+  @media (max-width: 320.98px) {
+    padding-right: 15px;
+    padding-top: 10px;
+    
+  }
 `
 
 export const DialogBlock = styled.div`
@@ -85,11 +104,14 @@ export const DialogBlock = styled.div`
     border-style: solid;
     display: block;
     width: 100%;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
     color: #666;
     background-image: none;
     border-bottom: 2px solid #282c34;
+    @media (max-width: 320.98px) {
+      margin-bottom: 10px;
+    }
 
     ::placeholder {
       color: #666;
