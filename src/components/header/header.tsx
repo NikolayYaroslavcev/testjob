@@ -83,6 +83,7 @@ export const Header = () => {
                             </PopupWrap>
                         </ModalWrap>
                     </Dialog>
+                    <Burger isOpenBurger={openBurger} onClick={onClickBurger}><span/></Burger>
                 </HeaderWrapper>
             </StyledContainer>
         </HeaderStyle>
