@@ -31,7 +31,7 @@ export const AboutCompanyTitle = styled.div`
   }
 `
 export const AboutCompanyText = styled.div`
-  padding: 192px 74px 85px 74px;
+  padding: 172px 74px 85px 74px;
   border-bottom: 1px solid #5DB447;
   @media (max-width: 1024.98px) {
     padding: 22px 74px 50px 74px;
