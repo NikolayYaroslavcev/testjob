@@ -14,6 +14,7 @@ export const ModalWrap = styled.div`
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.6);
   transition: all 0.3s;
+  padding: 30px;
   //scale: 0;
 `
 export const PopupWrap = styled.div`
