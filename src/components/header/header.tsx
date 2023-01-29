@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 
 
 import logo from '../../assets/img/logo.svg'
+import logoModal from '../../assets/img/modal/logoTop.svg'
 import {
     Button,
     HeaderImage,
@@ -12,14 +13,26 @@ import {
     MenuSubItem,
     StyledContainer,
     SubMenu
-} from "./header-style";
-import {Burger} from "../../assets/burger/style-burger";
-import {MenuList} from "../../assets/menu/style-menu";
+} from './header-style';
+import {Burger} from '../../assets/burger/style-burger';
+import {MenuList} from '../../assets/menu/style-menu';
+import {Dialog} from '@headlessui/react';
+import {ButtonClose, DialogBlock, DialogButton, ModalWrap, PopupWrap} from '../../assets/modal/style-modal';
+
 
 export const Header = () => {
     const [openBurger, setOpenBurger] = useState<boolean>(false);
+    const [openModal, setOpenModal] = useState<boolean>(false);
+
     const onClickBurger = () => {
         setOpenBurger(!openBurger)
+    }
+
+    const onClickModal = () => {
+        setOpenModal(true)
+    }
+    const onClickModalWindow = () => {
+        setOpenModal(false)
     }
 
     return (
@@ -53,8 +66,23 @@ export const Header = () => {
                             <MenuItem><a href="#">КОНТАКТЫ</a></MenuItem>
                         </MenuList>
                     </Menu>
-                    <Button type={"button"}>Заказать звонок</Button>
-                    <Burger isOpenBurger={openBurger} onClick={onClickBurger}><span/></Burger>
+                    <Button onClick={onClickModal} type={'button'}>Заказать звонок</Button>
+                    <Dialog open={openModal} onClose={onClickModalWindow}>
+                        <ModalWrap>
+                            <PopupWrap>
+                                <ButtonClose onClick={onClickModalWindow}>X</ButtonClose>
+                                <Dialog.Panel>
+                                    <DialogBlock>
+                                        <img src={logoModal} alt="logo"/>
+                                        <div>Заказать звонок</div>
+                                        <p>Оставьте заявку и наш специалист свяжется с вами в ближайшее время!</p>
+                                        <input type="tel" placeholder={'+375('}/>
+                                    </DialogBlock>
+                                </Dialog.Panel>
+                                <DialogButton>Заказать</DialogButton>
+                            </PopupWrap>
+                        </ModalWrap>
+                    </Dialog>
                 </HeaderWrapper>
             </StyledContainer>
         </HeaderStyle>
