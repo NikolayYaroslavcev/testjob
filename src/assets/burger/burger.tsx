@@ -17,5 +17,5 @@ export type PropsButtonType = PropsDefault & StyledButton;
 export type PropsBurger = Partial<PropsButtonType>
 
 export const BurgerStyle: FC<PropsBurger> = (props) => (
-    <Burger {...props}/>
+    <Burger {...props} />
 );

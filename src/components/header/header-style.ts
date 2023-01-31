@@ -28,6 +28,12 @@ export const HeaderStyle = styled.header`
   @media (max-width: 768.98px) {
     padding: 15px 0;
   }
+  @media (max-width: 425.98px) {
+    position: fixed;
+    margin-bottom: 0px;
+    background-color: #ffffff;
+    z-index: 5;
+  }
 `
 
 export const HeaderImage = styled.div<PropsImageType>`

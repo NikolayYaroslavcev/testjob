@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import {PropsMenu} from './menu';
 
 export const MenuList = styled.ul<PropsMenu>`
- 
+  z-index: 5;
   display: flex;
   column-gap: 64px;
   flex-wrap: wrap;
